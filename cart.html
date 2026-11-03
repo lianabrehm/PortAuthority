@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | Port Authority</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a href="index.html" class="logo-link"
+           aria-label="Port Authority Home">
+            <img src="images/logo.png"
+                 alt="Port Authority Logo"
+                 class="logo">
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="goods.html">Goods</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="cart.html" class="cart-button"
+           aria-current="page">
+            🛒 Cart
+        </a>
+
+    </header>
+
+    <main class="cart-page">
+
+        <div class="cart-container">
+
+            <div class="cart-heading">
+                <p class="cart-label">PORT AUTHORITY</p>
+                <h1>YOUR SHOPPING CART</h1>
+                <p>
+                    Review your selected goods and services
+                    before proceeding to checkout.
+                </p>
+            </div>
+
+            <div class="cart-layout">
+
+
+                <section class="cart-items"
+                         aria-labelledby="items-heading">
+
+                    <h2 id="items-heading">Your Items</h2>
+
+                    <div id="cart-items-list"
+                         aria-live="polite">
+
+                        
+                        <div class="empty-cart">
+                            <div class="empty-cart-icon"
+                                 aria-hidden="true">🛒</div>
+
+                            <h3>Your cart is empty</h3>
+
+                            <p>
+                                Browse our goods and services
+                                to find what your business needs.
+                            </p>
+
+                            <a href="goods.html"
+                               class="button primary-button">
+                                Shop Goods
+                            </a>
+
+                            <a href="services.html"
+                               class="button cart-outline-button">
+                                Explore Services
+                            </a>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                
+                <aside class="cart-summary"
+                       aria-labelledby="summary-heading">
+
+                    <h2 id="summary-heading">
+                        Order Summary
+                    </h2>
+
+                    <div class="summary-line">
+                        <span>Subtotal</span>
+                        <span id="cart-subtotal">$0.00</span>
+                    </div>
+
+                    <div class="summary-line">
+                        <span>Shipping</span>
+                        <span>Calculated later</span>
+                    </div>
+
+                    <hr>
+
+                    <div class="summary-line summary-total">
+                        <span>Estimated Total</span>
+                        <span id="cart-total">$0.00</span>
+                    </div>
+
+                    <p class="summary-note">
+                        Final pricing and shipping details
+                        will be provided during checkout.
+                    </p>
+
+                    <button type="button"
+                            class="checkout-button"
+                            disabled>
+                        Proceed to Checkout
+                    </button>
+
+                    <a href="goods.html"
+                       class="continue-shopping">
+                        Continue Shopping
+                    </a>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    
+    <footer>
+
+        <div class="footer-content">
+            <div>
+                <h2>Port Authority</h2>
+                <p>
+                    Secure logistics solutions
+                    for growing businesses.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="accessibility.html">Accessibility</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Port Authority.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>

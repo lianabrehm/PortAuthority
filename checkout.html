@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | Port Authority</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    
+    <header class="site-header">
+
+        <a href="index.html" class="logo-link"
+           aria-label="Port Authority Home">
+            <img src="images/logo.png"
+                 alt="Port Authority Logo"
+                 class="logo">
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="goods.html">Goods</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="cart.html" class="cart-button">
+            🛒 Cart
+        </a>
+
+    </header>
+
+    <main class="checkout-page">
+
+        <div class="checkout-container">
+
+            <!-- PAGE HEADING -->
+            <div class="checkout-heading">
+
+                <p class="checkout-label">
+                    PORT AUTHORITY
+                </p>
+
+                <h1>SECURE CHECKOUT</h1>
+
+                <p>
+                    Review your order and provide
+                    your shipping information.
+                </p>
+
+            </div>
+
+            <div class="checkout-layout">
+
+                
+                <section class="checkout-form-panel"
+                         aria-labelledby="checkout-form-heading">
+
+                    <h2 id="checkout-form-heading">
+                        Shipping Information
+                    </h2>
+
+                    <p class="checkout-description">
+                        Enter the business and delivery
+                        details for your order.
+                    </p>
+
+                    <form id="checkout-form">
+
+                        <div class="checkout-form-grid">
+
+                            <div class="checkout-field">
+                                <label for="business-name">
+                                    Business Name
+                                </label>
+                                <input
+                                    type="text"
+                                    id="business-name"
+                                    name="business_name"
+                                    autocomplete="organization"
+                                    required>
+                            </div>
+
+                            <div class="checkout-field">
+                                <label for="contact-name">
+                                    Contact Name
+                                </label>
+                                <input
+                                    type="text"
+                                    id="contact-name"
+                                    name="contact_name"
+                                    autocomplete="name"
+                                    required>
+                            </div>
+
+                            <div class="checkout-field">
+                                <label for="email">
+                                    Email Address
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    autocomplete="email"
+                                    required>
+                            </div>
+
+                            <div class="checkout-field">
+                                <label for="phone">
+                                    Phone Number
+                                </label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    autocomplete="tel"
+                                    required>
+                            </div>
+
+                            <div class="checkout-field full-width">
+                                <label for="address">
+                                    Street Address
+                                </label>
+                                <input
+                                    type="text"
+                                    id="address"
+                                    name="address"
+                                    autocomplete="street-address"
+                                    required>
+                            </div>
+
+                            <div class="checkout-field">
+                                <label for="city">
+                                    City
+                                </label>
+                                <input
+                                    type="text"
+                                    id="city"
+                                    name="city"
+                                    autocomplete="address-level2"
+                                    required>
+                            </div>
+
+                            <div class="checkout-field">
+                                <label for="state">
+                                    State / Province
+                                </label>
+                                <input
+                                    type="text"
+                                    id="state"
+                                    name="state"
+                                    autocomplete="address-level1"
+                                    required>
+                            </div>
+
+                            <div class="checkout-field">
+                                <label for="postal-code">
+                                    ZIP / Postal Code
+                                </label>
+                                <input
+                                    type="text"
+                                    id="postal-code"
+                                    name="postal_code"
+                                    autocomplete="postal-code"
+                                    required>
+                            </div>
+
+                            <div class="checkout-field">
+                                <label for="country">
+                                    Country
+                                </label>
+                                <input
+                                    type="text"
+                                    id="country"
+                                    name="country"
+                                    autocomplete="country-name"
+                                    required>
+                            </div>
+
+                            <div class="checkout-field full-width">
+                                <label for="order-notes">
+                                    Additional Instructions
+                                    (Optional)
+                                </label>
+                                <textarea
+                                    id="order-notes"
+                                    name="order_notes"
+                                    rows="4"
+                                    placeholder="Special delivery instructions..."></textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="checkout-agreement">
+                            <input
+                                type="checkbox"
+                                id="agree-terms"
+                                name="agree_terms"
+                                required>
+
+                            <label for="agree-terms">
+                                I agree to the
+                                <a href="terms.html">
+                                    Terms and Conditions
+                                </a>
+                                and acknowledge the
+                                <a href="privacy.html">
+                                    Privacy Policy
+                                </a>.
+                            </label>
+                        </div>
+
+                        <p class="checkout-notice">
+                            This checkout is currently a
+                            demonstration. Orders are not
+                            being submitted yet.
+                        </p>
+
+                        <button
+                            type="submit"
+                            class="place-order-button"
+                            disabled>
+                            Place Order — Coming Soon
+                        </button>
+
+                    </form>
+
+                </section>
+
+                
+                <aside class="checkout-summary"
+                       aria-labelledby="order-summary-heading">
+
+                    <h2 id="order-summary-heading">
+                        Order Summary
+                    </h2>
+
+                    <div class="checkout-summary-line">
+                        <span>Items</span>
+                        <span>Not loaded</span>
+                    </div>
+
+                    <div class="checkout-summary-line">
+                        <span>Subtotal</span>
+                        <span>$0.00</span>
+                    </div>
+
+                    <div class="checkout-summary-line">
+                        <span>Shipping</span>
+                        <span>To be calculated</span>
+                    </div>
+
+                    <hr>
+
+                    <div class="checkout-summary-line checkout-total">
+                        <span>Estimated Total</span>
+                        <span>$0.00</span>
+                    </div>
+
+                    <p class="checkout-summary-note">
+                        Final order details and pricing
+                        will be calculated when the
+                        ordering system is connected.
+                    </p>
+
+                    <a href="cart.html"
+                       class="back-to-cart">
+                        ← Return to Cart
+                    </a>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h2>Port Authority</h2>
+                <p>
+                    Secure logistics solutions
+                    for growing businesses.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="accessibility.html">Accessibility</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Port Authority.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>

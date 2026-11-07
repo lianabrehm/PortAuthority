@@ -1724,3 +1724,1079 @@ footer {
         padding: 25px;
     }
 }
+
+
+/* ===========================
+   LOGIN PAGE
+=========================== */
+
+.login-header {
+    justify-content: space-between;
+}
+
+.login-header-label {
+    color: #8bbff2;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* PAGE BACKGROUND */
+
+.login-page {
+    min-height: 75vh;
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(8, 127, 245, 0.18),
+            transparent 45%
+        ),
+        #050b14;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 20px;
+}
+
+/* LOGIN CARD */
+
+.login-card {
+    width: 100%;
+    max-width: 480px;
+    background-color: #ffffff;
+    color: #152538;
+    padding: 45px;
+    border-radius: 14px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+}
+
+.login-label {
+    color: #087ff5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0 0 12px;
+}
+
+.login-card h1 {
+    color: #10243b;
+    font-size: 34px;
+    margin: 0 0 12px;
+}
+
+.login-description {
+    color: #64748b;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/* FORM FIELDS */
+
+.login-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.login-field label {
+    color: #25364b;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-field input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: white;
+    color: #152538;
+    font: inherit;
+}
+
+.login-field input:focus {
+    outline: 2px solid #087ff5;
+    outline-offset: 1px;
+}
+
+/* REMEMBER ME / HELP */
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.remember-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #475569;
+    font-size: 13px;
+}
+
+.login-help {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.login-help a {
+    color: #0870d5;
+}
+
+/* LOGIN BUTTON */
+
+.login-submit {
+    display: block;
+    width: 100%;
+    background-color: #087ff5;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login-submit:disabled {
+    background-color: #64748b;
+    cursor: not-allowed;
+}
+
+.login-notice {
+    text-align: center;
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+/* REGISTRATION LINK */
+
+.login-divider {
+    text-align: center;
+    margin: 30px 0 20px;
+    border-top: 1px solid #e2e8f0;
+    position: relative;
+}
+
+.login-divider span {
+    display: inline-block;
+    background: white;
+    color: #64748b;
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding: 0 12px;
+    position: relative;
+    top: -11px;
+}
+
+.register-link {
+    display: block;
+    text-align: center;
+    border: 1px solid #087ff5;
+    border-radius: 6px;
+    color: #0870d5;
+    padding: 13px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link:hover {
+    background-color: #eaf4ff;
+}
+
+/* FOOTER */
+
+.login-footer {
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.login-footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.login-footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.login-footer-links a:hover {
+    color: #45a7ff;
+}
+
+.login-footer p {
+    color: #8294a5;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .login-card {
+        padding: 30px 22px;
+    }
+
+    .login-header-label {
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+
+/* ===========================
+   REGISTRATION PAGE
+=========================== */
+
+.register-page {
+    min-height: 80vh;
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(8, 127, 245, 0.18),
+            transparent 45%
+        ),
+        #050b14;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 65px 20px 90px;
+}
+
+/* REGISTRATION CARD */
+
+.register-card {
+    width: 100%;
+    max-width: 780px;
+    background-color: #ffffff;
+    color: #152538;
+    padding: 45px;
+    border-radius: 14px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+}
+
+.register-label {
+    color: #087ff5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0 0 12px;
+}
+
+.register-card h1 {
+    color: #10243b;
+    font-size: clamp(28px, 4vw, 36px);
+    margin: 0 0 12px;
+}
+
+.register-description {
+    color: #64748b;
+    margin-bottom: 35px;
+}
+
+.register-card h2 {
+    font-size: 19px;
+    color: #10243b;
+    margin: 30px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* FORM GRID */
+
+.register-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.register-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.register-field label {
+    color: #25364b;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.register-field input,
+.register-field select {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: white;
+    color: #152538;
+    font: inherit;
+}
+
+.register-field input:focus,
+.register-field select:focus {
+    outline: 2px solid #087ff5;
+    outline-offset: 1px;
+}
+
+.password-help {
+    color: #64748b;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+/* AGREEMENTS */
+
+.register-agreements {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 30px 0;
+}
+
+.register-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: #475569;
+    font-size: 14px;
+}
+
+.register-checkbox input {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.register-checkbox a {
+    color: #0870d5;
+}
+
+.register-notice {
+    color: #64748b;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+/* SUBMIT BUTTON */
+
+.register-submit {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #087ff5;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.register-submit:disabled {
+    background-color: #64748b;
+    cursor: not-allowed;
+}
+
+/* SIGN IN LINK */
+
+.register-login-link {
+    text-align: center;
+    margin-top: 30px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.register-login-link a {
+    color: #0870d5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-login-link a:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 650px) {
+    .register-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .register-card {
+        padding: 30px 22px;
+    }
+
+    .register-page {
+        padding: 35px 15px 60px;
+    }
+}
+
+
+
+/* ==========================================
+   TERMS AND CONDITIONS PAGE
+========================================== */
+
+/* Logo */
+.legal-logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.legal-logo {
+    width: 190px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Terms Banner */
+.legal-hero {
+    background: linear-gradient(
+        110deg,
+        #071b31 0%,
+        #103456 60%,
+        #164b77 100%
+    );
+    color: white;
+    padding: 75px 6%;
+    border-bottom: 2px solid #168cff;
+}
+
+.legal-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    margin: 15px 0 20px;
+}
+
+.legal-hero p {
+    font-size: 16px;
+    color: #dce8f3;
+    line-height: 1.7;
+    max-width: 750px;
+}
+
+.legal-hero small {
+    display: block;
+    color: #a9c9e2;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/* Main Terms Section */
+.legal-layout {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 850px);
+    justify-content: center;
+    gap: 40px;
+
+    max-width: 1300px;
+    margin: auto;
+    padding: 60px 5%;
+
+    background: #f4f7fb;
+    color: #263d52;
+}
+
+/* Full Page Background */
+body:has(.legal-layout) {
+    background: #f4f7fb;
+}
+
+/* Sidebar Navigation */
+.legal-nav {
+    position: sticky;
+    top: 25px;
+    align-self: start;
+
+    max-height: calc(100vh - 50px);
+    overflow-y: auto;
+
+    background: white;
+    border: 1px solid #dce5ee;
+    border-radius: 10px;
+    padding: 25px 20px;
+
+    box-shadow: 0 4px 15px rgba(0, 25, 50, 0.05);
+
+    scrollbar-width: thin;
+    scrollbar-color: #a9c5da #ffffff;
+}
+
+.legal-nav strong {
+    display: block;
+    font-size: 17px;
+    color: #102d4d;
+    margin-bottom: 20px;
+}
+
+.legal-nav a {
+    display: block;
+    padding: 9px 10px;
+    margin-bottom: 3px;
+
+    font-size: 14px;
+    line-height: 1.5;
+    color: #385a76;
+    text-decoration: none;
+
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+.legal-nav a:hover {
+    background: #e9f3fc;
+    color: #0874b9;
+}
+
+.legal-nav a:focus-visible {
+    outline: 3px solid #168cff;
+    outline-offset: 2px;
+}
+
+/* Terms Content */
+.legal-article {
+    background: white;
+    padding: 35px 40px;
+    border: 1px solid #e1e8ef;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0, 25, 50, 0.04);
+    min-width: 0;
+}
+
+/* Individual Policy Sections */
+.legal-article section {
+    margin-bottom: 45px;
+    scroll-margin-top: 30px;
+}
+
+.legal-article section:last-child {
+    margin-bottom: 0;
+}
+
+/* Section Headings */
+.legal-article h2 {
+    font-size: 23px;
+    font-weight: 700;
+    color: #123e68;
+
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #dce6ef;
+}
+
+.legal-article h3 {
+    font-size: 18px;
+    color: #17618e;
+    margin: 25px 0 12px;
+}
+
+/* Paragraphs */
+.legal-article p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #344b60;
+    margin-bottom: 18px;
+}
+
+/* Lists */
+.legal-article ul,
+.legal-article ol {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.legal-article li {
+    font-size: 15px;
+    color: #344b60;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* Bold Text */
+.legal-article strong {
+    color: #123e68;
+    font-weight: 700;
+}
+
+/* Links */
+.legal-article a {
+    color: #0874b9;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.legal-article a:hover {
+    color: #054b79;
+}
+
+/* Footer */
+.legal-footer {
+    background: #071b31;
+    color: white;
+    text-align: center;
+
+    padding: 35px 20px;
+    border-top: 2px solid #168cff;
+}
+
+.legal-footer a {
+    color: #c5e3ff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+.legal-footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.legal-footer p {
+    color: #a5bfd4;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+/* Tablets */
+@media (max-width: 950px) {
+    .legal-layout {
+        grid-template-columns: 220px minmax(0, 1fr);
+        gap: 25px;
+        padding: 40px 4%;
+    }
+
+    .legal-article {
+        padding: 30px 25px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 700px) {
+    .legal-logo {
+        width: 150px;
+    }
+
+    .legal-hero {
+        padding: 50px 6%;
+    }
+
+    .legal-hero h1 {
+        font-size: 34px;
+    }
+
+    .legal-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 30px 5%;
+    }
+
+    .legal-nav {
+        position: static;
+        max-height: 250px;
+    }
+
+    .legal-article {
+        padding: 25px 20px;
+    }
+
+    .legal-article h2 {
+        font-size: 21px;
+    }
+
+    .legal-article p,
+    .legal-article li {
+        font-size: 14px;
+    }
+
+    .legal-alert {
+        padding: 18px;
+        font-size: 14px;
+    }
+
+    .legal-footer a {
+        display: inline-block;
+        margin: 8px;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .legal-nav a {
+        transition: none;
+    }
+}
+
+
+/* ==========================================
+   PORT AUTHORITY - PRIVACY POLICY PAGE
+========================================== */
+
+/* Privacy Page Background */
+body:has(.privacy-page) {
+    background: #f4f7fb;
+}
+
+/* Privacy Banner */
+.privacy-hero {
+    background: linear-gradient(
+        110deg,
+        #071b31 0%,
+        #103456 60%,
+        #164b77 100%
+    );
+
+    color: white;
+    padding: 75px 6%;
+    border-bottom: 2px solid #168cff;
+}
+
+.privacy-label {
+    color: #c5dff3;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.privacy-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    margin: 15px 0 20px;
+}
+
+.privacy-hero p {
+    font-size: 16px;
+    color: #dce8f3;
+    line-height: 1.7;
+    max-width: 750px;
+}
+
+.privacy-date {
+    display: block;
+    color: #a9c9e2;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/* Main Privacy Layout */
+.privacy-container {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 850px);
+    justify-content: center;
+    gap: 40px;
+
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 60px 5%;
+
+    background: #f4f7fb;
+    color: #263d52;
+}
+
+/* Sidebar Navigation */
+.privacy-sidebar {
+    position: sticky;
+    top: 25px;
+    align-self: start;
+
+    max-height: calc(100vh - 50px);
+    overflow-y: auto;
+
+    background: white;
+    border: 1px solid #dce5ee;
+    border-radius: 10px;
+    padding: 25px 20px;
+
+    box-shadow: 0 4px 15px rgba(0, 25, 50, 0.05);
+
+    scrollbar-width: thin;
+    scrollbar-color: #a9c5da #ffffff;
+}
+
+.privacy-sidebar h2 {
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    color: #102d4d;
+    margin: 0 0 20px;
+}
+
+.privacy-sidebar nav a {
+    display: block;
+    padding: 9px 10px;
+    margin-bottom: 3px;
+
+    font-size: 14px;
+    line-height: 1.5;
+    color: #385a76;
+    text-decoration: none;
+
+    border-radius: 5px;
+    transition: background 0.2s ease,
+                color 0.2s ease;
+}
+
+.privacy-sidebar nav a:hover {
+    background: #e9f3fc;
+    color: #0874b9;
+}
+
+.privacy-sidebar nav a:focus-visible {
+    outline: 3px solid #168cff;
+    outline-offset: 2px;
+}
+
+/* Main Privacy Content */
+.privacy-content {
+    background: white;
+    padding: 35px 40px;
+
+    border: 1px solid #e1e8ef;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0, 25, 50, 0.04);
+    min-width: 0;
+}
+
+/* Individual Privacy Sections */
+.privacy-content section {
+    margin-bottom: 45px;
+    scroll-margin-top: 30px;
+}
+
+.privacy-content section:last-child {
+    margin-bottom: 0;
+}
+
+/* Section Headings */
+.privacy-content h2 {
+    font-size: 23px;
+    font-weight: 700;
+    color: #123e68;
+
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #dce6ef;
+}
+
+.privacy-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #17618e;
+    margin: 25px 0 12px;
+}
+
+/* Paragraphs */
+.privacy-content p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #344b60;
+    margin-bottom: 18px;
+}
+
+/* Lists */
+.privacy-content ul,
+.privacy-content ol {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.privacy-content li {
+    font-size: 15px;
+    color: #344b60;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* Bold Text */
+.privacy-content strong {
+    color: #123e68;
+    font-weight: 700;
+}
+
+/* Links */
+.privacy-content a {
+    color: #0874b9;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.privacy-content a:hover {
+    color: #054b79;
+}
+
+/* Academic Notice - Optional */
+.privacy-draft-notice {
+    background: #edf5fc;
+    border-left: 4px solid #168cff;
+    border-radius: 5px;
+
+    padding: 22px 25px;
+    margin-bottom: 40px;
+
+    color: #294d69;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.privacy-draft-notice strong {
+    color: #123e68;
+}
+
+/* Privacy Contact Button */
+.privacy-contact-button {
+    display: inline-block;
+    background: #168cff;
+    color: white !important;
+
+    padding: 12px 24px;
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none !important;
+
+    transition: background 0.2s ease;
+}
+
+.privacy-contact-button:hover {
+    background: #0867a4;
+    color: white !important;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+/* Tablets */
+@media (max-width: 950px) {
+    .privacy-container {
+        grid-template-columns: 220px minmax(0, 1fr);
+        gap: 25px;
+        padding: 40px 4%;
+    }
+
+    .privacy-content {
+        padding: 30px 25px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 700px) {
+    .privacy-hero {
+        padding: 50px 6%;
+    }
+
+    .privacy-hero h1 {
+        font-size: 34px;
+    }
+
+    .privacy-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 30px 5%;
+    }
+
+    .privacy-sidebar {
+        position: static;
+        max-height: 250px;
+    }
+
+    .privacy-content {
+        padding: 25px 20px;
+    }
+
+    .privacy-content h2 {
+        font-size: 21px;
+    }
+
+    .privacy-content p,
+    .privacy-content li {
+        font-size: 14px;
+    }
+
+    .privacy-draft-notice {
+        padding: 18px;
+        font-size: 14px;
+    }
+}
+
+/* Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .privacy-sidebar nav a,
+    .privacy-contact-button {
+        transition: none;
+    }
+}
+
+/* sidebar fix*/
+
+.privacy-sidebar {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.privacy-sidebar nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 4px;
+    width: 100%;
+}
+
+.privacy-sidebar nav a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    flex: none;
+
+    padding: 9px 10px;
+    margin: 0;
+
+    color: #385a76;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    text-decoration: none;
+
+    white-space: normal;
+    overflow-wrap: break-word;
+    border-radius: 5px;
+}
+
+.privacy-sidebar nav a:hover {
+    background: #e9f3fc;
+    color: #0874b9;
+}
+
+
